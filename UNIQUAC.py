@@ -26,7 +26,7 @@ Pc12 = 0.2685 * R * Tc12 / (Vc12)
 
 w12 = (W[0] + W[1]) / 2
 
-def psat(T): # calculo da pressão de saturação
+def psat(T): # calculo da pressão de saturaçãoo
     psat1 = mt.exp(A[0] + B[0]/T + C[0]*mt.log(T) + D[0]*T**E[0])
     psat2 = mt.exp(A[1] + B[1]/T + C[1]*mt.log(T) + D[1]*T**E[1])
     return np.array([[psat1],[psat2]])
